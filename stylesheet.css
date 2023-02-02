@@ -233,11 +233,9 @@ overflow: visible;
  padding: 0;
  min-width: 720px;
  flex-wrap: wrap; 
- align-content: stretch;
- align-content: flex-start;
- justify-content: space-around;
+
    } 
-   .swiper-wrapper::after { 
+.swiper-wrapper::after { 
      position: absolute;
      content: "";
      left: 190%;
@@ -246,12 +244,16 @@ overflow: visible;
      min-height: 74px;
    
    }
+
 .swiper-slide {
+ min-width: 240px;
+  flex-grow: 1;
  height: 72px;
  margin: 0;
  margin-top: 16px;
  margin-right: 24px;
  padding: 0; 
+ 
 } 
 .hidden {
  display: none !important;
