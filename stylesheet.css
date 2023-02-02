@@ -235,6 +235,11 @@ overflow: visible;
  flex-wrap: wrap; 
 
    } 
+
+
+   .swiper-wrapper>* {
+    flex: 0 0 30.3333%;
+   }
 .swiper-wrapper::after { 
      position: absolute;
      content: "";
@@ -246,15 +251,14 @@ overflow: visible;
    }
 
 .swiper-slide {
- min-width: 240px;
-  flex-grow: 1;
  height: 72px;
  margin: 0;
  margin-top: 16px;
  margin-right: 24px;
  padding: 0; 
- 
+
 } 
+
 .hidden {
  display: none !important;
 }
@@ -303,7 +307,9 @@ overflow: visible;
         margin: 0;
         padding: 0;
           } 
-      
+          .swiper-wrapper>* {
+            flex: 0 0 21.9%;
+           }
           .swiper-slide {
             height: 90px;
             margin: 0;
